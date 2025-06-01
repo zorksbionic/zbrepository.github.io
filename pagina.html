@@ -3,6 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Downloads</title>
+  <script>
+  // Página de origem autorizada — pode ser sua homepage, por exemplo
+  const allowedReferrer = "https://zorksbr.github.io/zbrepository/index.html";
+
+  // Se o referer for vazio ou diferente do permitido, bloqueia o acesso
+  if (!document.referrer || document.referrer !== allowedReferrer) {
+    alert("Acesso direto não permitido!");
+    window.location.href = "index.html"; // redireciona para a página inicial
+  }
+</script>
+
   <style>
     body {
       background-color: black;
