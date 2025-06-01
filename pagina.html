@@ -6,10 +6,68 @@
   <style>
     body {
       background-color: black;
-      color: yellow;
+      color: white;
       font-family: Arial, sans-serif;
       text-align: center;
-      margin: 0;
-      padding: 0;
+      padding: 40px;
     }
-<a href="downloads/thaiscarla.png" download>Baixar</a>
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .caixa-download {
+      border: 2px solid white;
+      background-color: black;
+      padding: 10px 20px;
+      width: 200px;
+    }
+
+    .caixa-download p {
+      margin: 0;
+      font-size: 14px;
+      color: white;
+    }
+
+    .caixa-download a {
+      display: block;
+      margin-top: 8px;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .caixa-download a:hover {
+      color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>Downloads</h1>
+  <div class="grid">
+    <div class="caixa-download"><p>"arquivo1.zip"</p><a href="arquivo1.zip" download>Baixar</a></div>
+    <div class="caixa-download"><p>"arquivo2.zip"</p><a href="arquivo2.zip" download>Baixar</a></div>
+    <div class="caixa-download"><p>"arquivo3.zip"</p><a href="arquivo3.zip" download>Baixar</a></div>
+    <div class="caixa-download"><p>"arquivo4.zip"</p><a href="arquivo4.zip" download>Baixar</a></div>
+    <div class="caixa-download"><p>"arquivo5.zip"</p><a href="arquivo5.zip" download>Baixar</a></div>
+    <div class="caixa-download"><p>"arquivo6.zip"</p><a href="arquivo6.zip" download>Baixar</a></div>
+    <div class="caixa-download"><p>"arquivo7.zip"</p><a href="arquivo7.zip" download>Baixar</a></div>
+    <div class="caixa-download"><p>"arquivo8.zip"</p><a href="arquivo8.zip" download>Baixar</a></div>
+    <div class="caixa-download"><p>"arquivo9.zip"</p><a href="arquivo9.zip" download>Baixar</a></div>
+    <div class="caixa-download"><p>"arquivo10.zip"</p><a href="arquivo10.zip" download>Baixar</a></div>
+    <div class="caixa-download"><p>"arquivo11.zip"</p><a href="arquivo11.zip" download>Baixar</a></div>
+    <div class="caixa-download"><p>"arquivo12.zip"</p><a href="arquivo12.zip" download>Baixar</a></div>
+  </div>
+</body>
+</html>
